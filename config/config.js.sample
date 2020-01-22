@@ -44,13 +44,18 @@ var config = {
 		},
 		{
 			module: "calendar",
-			header: "US Holidays",
+			header: "IOTA Events",
 			position: "top_left",
 			config: {
 				calendars: [
 					{
 						symbol: "calendar-check",
-						url: "webcal://www.calendarlabs.com/ical-calendar/ics/76/US_Holidays.ics"					}
+						url: "https://community.einfachiota.de/calendar/calendar-export/409/?at=114-9ff1d320537125f02b73ab191eba420f2fbcfa05"					
+					},
+					{
+						symbol: "calendar-check",
+						url: "https://community.einfachiota.de/calendar/calendar-export/410/?at=114-9ff1d320537125f02b73ab191eba420f2fbcfa05"					
+					}
 				]
 			}
 		},
@@ -58,6 +63,7 @@ var config = {
 			module: "compliments",
 			position: "lower_third"
 		},
+		/**
 		{
 			module: "currentweather",
 			position: "top_right",
@@ -77,14 +83,15 @@ var config = {
 				appid: "YOUR_OPENWEATHER_API_KEY"
 			}
 		},
+		 */
 		{
 			module: "newsfeed",
 			position: "bottom_bar",
 			config: {
 				feeds: [
 					{
-						title: "New York Times",
-						url: "http://www.nytimes.com/services/xml/rss/nyt/HomePage.xml"
+						title: "IOTA.org",
+						url: "https://blog.iota.org/feed"
 					}
 				],
 				showSourceTitle: true,
